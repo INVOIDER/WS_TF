@@ -126,3 +126,10 @@ html {scroll-behavior: smooth;}
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   background-color:#fab529;
 }
+
+/* ========== Auth ==========*/
+.auth{
+  flex-direction:column;
+  text-align: center;
+  margin: 0 auto;
+}
