@@ -78,5 +78,8 @@ if ((isset($_POST['regLogin'])) && (isset($_POST['regPassword'])) && (isset($_PO
 }
     ?>
 </div>
+    <?php
+    include_once 'footer.php'
+    ?>
     </body>
     </html>
