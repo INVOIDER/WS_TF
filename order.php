@@ -1,5 +1,6 @@
 <?php
     session_start();
+    include ("bd.php");
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,22 +18,22 @@
   <?php
     include_once 'header.php'
     ?>
-    
+    <form method="post">
     <div class="order-select">
       <h3 class="order-select-header">СКОЛЬКО ЧАСОВ НУЖНО:</h3>
-      <select class="time-select">
+      <select name = "time" class="time-select">
         <option>1</option><option>2</option> <option>3</option><option>4</option><option>5</option><option>6</option> <option>7</option><option>8</option> 
       </select>
       <h3 class="order-select-header">ДАТА БРОНИРОВАНИЯ:</h3>
-        <input type="date" class="date-select">
+        <input name = "date" type="date" class="date-select">
       <h3 class="order-select-header">ВРЕМЯ НАЧАЛА БРОНИРОВАНИЯ:</h3>
-      <select class="time-start-select">
+      <select name = "timeStart" class="time-start-select">
         <option>00:00</option><option>01:00</option><option>02:00</option><option>03:00</option> <option>04:00</option><option>05:00</option><option>06:00</option><option>07:00</option><option>08:00</option><option>09:00</option><option>10:00</option><option>11:00</option><option>12:00</option><option>13:00</option><option>14:00</option><option>15:00</option><option>16:00</option><option>17:00</option><option>18:00</option><option>19:00</option><option>20:00</option><option>21:00</option><option>22:00</option><option>23:00</option>
       </select>
       <div class="order-submit">
-        <input type="submit" class="order-submit-btn">
+        <input type="submit" class="order-submit-btn" name = "submit">
       </div>
-      
+    </form>
     </div>
   
 
@@ -40,8 +41,5 @@
   <?php
   include_once 'footer.php'
   ?>
-
-    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-    <script src="slider.js"></script>
   </body>
 </html>
