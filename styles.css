@@ -187,3 +187,27 @@ html {scroll-behavior: smooth;}
   width: 40px;
   height: 40x;
 }
+
+/* =========== Order ============= */
+
+.order-select {
+  margin: 2vh 2vw;
+}
+
+.order-select-header {
+  padding: 1vh 0;
+}
+
+.time-select, .date-select, .time-start-select {
+  min-height: 2vh;
+  min-width: 10vw;
+}
+
+.order-submit {
+  padding-top: 1vh;
+}
+
+.order-submit-btn {
+  min-height: 2vh;
+  min-width: 4vw;
+}
