@@ -4,7 +4,7 @@
         <a class="logo-ref" href="index.php">
           <img class="logo" src="img/logo.png" alt="Логотип">
         </a>
-        <div class="logo-text">ПОЛЮС</div>
+        <div class="logo-text"><strong>ПОЛЮС</strong></div>
       </div>
       <a class="login-button" href="login.php"><span class="login-text">Логин</span></a>
     </header>
