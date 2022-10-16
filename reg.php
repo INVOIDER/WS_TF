@@ -15,7 +15,7 @@
 <section class="auth-container">
         <div class="login">
           <h2 class="auth-header">Регистрация</h2>
-          <form method="" class="auth-form">
+          <form method="POST" class="auth-form">
             <!--**** save_user.php - это адрес обработчика.  То есть, после нажатия на кнопку "Зарегистрироваться", данные из полей  отправятся на страничку save_user.php методом "POST" ***** -->
             <p><input required name="regLogin" type="text" size="15" maxlength="15" class="auth-input" placeholder="Ваш логин"></p>
             <!--**** В текстовое поле (name="login" type="text") пользователь вводит свой логин ***** -->
@@ -24,13 +24,11 @@
             <p><input required name="email" type="email" size="15" maxlength="32" class="auth-input" placeholder="Ваш Email"></p>
             <!--**** В поле для почты пользователь вводит свою почту ***** --> 
             <p class="submit"><input type="submit" name="submit" value="Зарегистрироваться" class="auth-submit">
-            <!--**** Кнопочка (type="submit") отправляет данные на страничку testreg.php ***** --> 
         </p></form>
 
 
 <!-- PHP обработка запроса -->
 <?php
-//$login = $password = $email = '';
 if ((isset($_POST['regLogin'])) && (isset($_POST['regPassword'])) && (isset($_POST['email'])) )
 {
     $login = $_POST['regLogin']; 
@@ -69,6 +67,7 @@ if ((isset($_POST['regLogin'])) && (isset($_POST['regPassword'])) && (isset($_PO
 }
     ?>
 </div>
+</section>
     <?php
     include_once 'footer.php'
     ?>

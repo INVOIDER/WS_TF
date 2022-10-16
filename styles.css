@@ -171,10 +171,12 @@ html {scroll-behavior: smooth;}
   width: 278px;
 }
 
-.login p.submit {
+.login div.submit {
   text-align: center;
 }
-
+button.auth-submit{
+  text-align: center;
+}
 ::-webkit-input-placeholder {
   color: #ccc;
   font-size: 13px;
@@ -220,10 +222,6 @@ html {scroll-behavior: smooth;}
   background: #f3f3f3;
   border-color: #c2b59e #c8c0b3 #cec2b4;
   box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.2);
-}
-
-.exit-btn {
-   display: none;
 }
 /* ========= Footer ========== */
 
